@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bogor Kasohor</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+
+    <header>
+        <h1>BOGOR</h1>
+        <p>KOTA INDAH SEJUK NYAMAN, BAGAI BUNGA DI DALAM TAMAN</p>
+        
+        <nav>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+
+            <ul id="myLinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#sejarah">Sejarah</a></li>
+                <li><a href="#kuliner">Kuliner</a></li>
+                <li><a href="#galeri">Galeri</a></li>
+                <li><a href="https://www.dicoding.com/users/ghaniycandra" target="_blank">Profil Penulis</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div id="content">
+            
+            <article id="sejarah" class="card">
+                <h2><i>Buitenzorg</i></h2><br>
+                <figure>
+                    <img src="img/istana_bogor.jpg" alt="Istana Bogor" class="featured-image">
+                    <figcaption>Istana Bogor</figcaption>
+                </figure>
+                <p>Kota Bogor memiliki sejarah panjang yang berakar dari masa Kerajaan Sunda Pakuan Pajajaran. Namun, wajah kota ini mulai terbentuk jelas pada masa kolonial Belanda. Gubernur Jenderal Gustaaf Willem Baron van Imhoff terpesona akan keindahan alam wilayah ini dan memberinya nama <b><i>"Buitenzorg"</i></b>, yang berarti "tanpa kekhawatiran" atau "tempat yang damai".</p><br>
+                <p>Pada tahun 1817, Caspar Georg Carl Reinwardt mendirikan <b><i>s’Lands Plantentuin</i></b> yang kini kita kenal sebagai <b>Kebun Raya Bogor</b>. Keberadaan Kebun Raya dan Istana Bogor menjadikan kota ini pusat penelitian botani tropis terkemuka di dunia dan tempat peristirahatan favorit para petinggi negara hingga saat ini.</p>
+            </article>
+
+           <article id="kuliner" class="card">
+                <h2>Wisata Kuliner Legendaris</h2><br>
+                <p>Berkunjung ke Bogor tidak lengkap tanpa mencicipi kulinernya. Berikut adalah beberapa makanan khas yang wajib dicoba:</p><br>
+                <ul>
+                    <li>
+                        <b>Soto Mie Bogor</b>
+                        <p>Perpaduan mie kuning, bihun, daging sapi, dan risol dengan kuah kaldu yang segar.</p>
+                        <img src="img/soto_mie_bogor.jpg" alt="Soto Mie Bogor" class="featured-image">
+                    </li>
+
+                    <li>
+                        <b>Toge Goreng Bogor</b>
+                        <p>Toge rebus yang disiram bumbu tauco oncom yang gurih, biasanya disajikan dengan ketupat.</p>
+                        <img src="img/toge_goreng_bogor.jpg" alt="Toge Goreng Bogor" class="featured-image">
+                    </li>
+
+                    <li>
+                        <b>Asinan Bogor</b>
+                        <p>Sayuran atau buah-buahan segar dengan kuah cuka dan kacang yang menyegarkan.</p>
+                        <img src="img/asinan_bogor.jpeg" alt="Asinan Bogor" class="featured-image">
+                    </li>
+                </ul>
+            </article>
+
+            <article id="galeri" class="card">
+                <h2>Galeri Kota</h2><br>
+                <div class="gallery-container">
+                    <figure>
+                        <img src="img/tugu_kujang.jpg" alt="Tugu Kujang" class="featured-image">
+                        <figcaption>Tugu Kujang Bogor</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="img/kebun_raya.jpg" alt="Kebun Raya" class="featured-image">
+                        <figcaption>Kebun Raya Bogor</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="img/biskita.jpg" alt="Biskita" class="featured-image">
+                        <figcaption>Biskita</figcaption>
+                    </figure>
+                </div>
+            </article>
+        </div>
+
+        <aside>
+            <article class="profile-card">
+                <header>
+                    <h2>Profil Penulis</h2><br>
+                    <figure>
+                        <img src="img/foto_penulis.jpg" alt="Foto Profil Penulis"> 
+                    </figure>
+                </header>
+                <section>
+                    <h3>Ghaniy Candra</h3>
+                    <p>Bogor, Jawa Barat</p>
+                </section>
+            </article>
+        </aside>
+    </main>
+
+    <footer>
+        <p>Belajar Dasar Pemrograman Web &#169; 2025 - Bogor Kasohor</p>
+    </footer>
+
+    <a href="#" id="backToTop" title="Kembali ke Atas">&uarr;</a>
+
+    <script>
+    function myFunction() {
+        var x = document.getElementById("myLinks");
+        if (x.style.display === "block") {
+            x.style.display = "none";
+        } else {
+            x.style.display = "block";
+        }
+    }
+
+    const backToTopButton = document.getElementById("backToTop");
+    if (backToTopButton) {
+        window.onscroll = function() {scrollFunction()};
+    }
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            backToTopButton.style.display = "block";
+        } else {
+            backToTopButton.style.display = "none";
+        }
+    }
+</script>
+
+</body>
+</html>
