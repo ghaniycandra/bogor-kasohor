@@ -1,8 +1,8 @@
 # Bogor Kasohor
 
-> **"A BEAUTIFUL, COOL, AND COMFORTABLE CITY, LIKE A FLOWER IN A GARDEN"**
+> **"A BEAUTIFUL, RELAXED, AND COMFORTABLE CITY, LIKE A FLOWER IN A GARDEN"**
 
-A simple and informative website created to introduce the history, legendary culinary delights, and proud icons of Bogor City. This project was developed as part of the "Belajar Dasar Pemrograman Web" (Learning Basic Web Programming) course.
+A simple and informative website created to introduce the history, legendary culinary delights, and proud icons of Bogor City.
 
 ## 📑 Table of Contents (Main Features)
 
